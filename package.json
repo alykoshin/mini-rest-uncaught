@@ -15,9 +15,9 @@
     "lint": "eslint -f unix .",
     "inspect": "jsinspect",
     "pretest": "npm run lint && npm run inspect && npm run nsp && npm run _deps-check",
-    "_test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
+    "__test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
     "test": "npm run _test",
-    "__test": "echo \"Warning: no test specified\" && exit 0",
+    "_test": "echo \"Warning: no test specified\" && exit 0",
     "___test": "echo \"Error: no test specified\" && exit 1",
     "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*",
     "_commit": "git commit -am \"commit by 'npm run commit'\"",
@@ -32,7 +32,7 @@
     "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
-      "process,uncaught,handler,handle,exception"
+    "process,uncaught,handler,handle,exception"
   ],
   "author": "Alexander <alykoshin@gmail.com>",
   "license": "MIT",
@@ -45,18 +45,8 @@
   },
   "homepage": "https://github.com/alykoshin/mini-rest-uncaught",
   "dependencies": {
-    "minimist": "^1.2.0"
+    "mini-rest-errors": "0.0.3",
+    "mini-rest-logger": "0.0.6"
   },
-  "devDependencies": {
-    "chai": "^3.4.1",
-    "chai-things": "^0.2.0",
-    "coveralls": "^2.11.4",
-    "eslint": "^1.10.3",
-    "istanbul": "^0.4.1",
-    "jshint": "^2.8.0",
-    "jsinspect": "^0.7.2",
-    "mocha": "^2.3.4",
-    "mockery": "^1.4.0",
-    "sinon": "^1.17.2"
-  }
+  "devDependencies": {}
 }
