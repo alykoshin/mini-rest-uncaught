@@ -10,7 +10,9 @@
 
 # mini-rest-uncaught
 
-Simple uncaught exception handler for mini-rest project
+Simple uncaught exception handler for `mini-rest` project.
+
+Logs all uncaught exceptions except `SyntaxError` (to allow filename, lineno, colno to be shown) and workaround for 'Directory not found' in `require-config-all`
 
 
 If you have different needs regarding the functionality, please add a [feature request](https://github.com/alykoshin/mini-rest-uncaught/issues).
