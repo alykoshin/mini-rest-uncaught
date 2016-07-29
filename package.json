@@ -1,6 +1,6 @@
 {
   "name": "mini-rest-uncaught",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Simple uncaught exception handler for mini-rest project",
   "main": "./index.js",
   "engines": {
