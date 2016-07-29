@@ -46,7 +46,7 @@
   "homepage": "https://github.com/alykoshin/mini-rest-uncaught",
   "dependencies": {
     "mini-rest-errors": "0.1.6",
-    "mini-rest-logger": "0.0.19"
+    "mini-rest-logger": "0.0.22"
   },
   "devDependencies": {}
 }
